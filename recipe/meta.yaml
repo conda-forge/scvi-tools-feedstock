@@ -39,7 +39,7 @@ requirements:
     - setuptools <=59.5.0
     - jax >=0.3
     - optax
-    - numpyro
+    - numpyro >=0.9.0
     - flax
     - torchmetrics >=0.6.0
 
