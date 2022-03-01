@@ -37,7 +37,7 @@ requirements:
     - pytorch >=1.8.0
     - tqdm >=4.56.0
     - setuptools <=59.5.0
-    - jax >=0.3
+    - jax >=0.2.13,<0.3
     - optax
     - numpyro >=0.9.0
     - flax >=0.4.0
