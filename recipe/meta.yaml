@@ -27,7 +27,6 @@ requirements:
     - h5py >=2.9.0
     - importlib_metadata
     - ipywidgets >=7.5.1
-    - numba >=0.41.0
     - numpy >=1.17.0
     - openpyxl >=3.0
     - pandas >=1.0
@@ -38,6 +37,9 @@ requirements:
     - pytorch >=1.8.0
     - tqdm >=4.56.0
     - setuptools <=59.5.0
+    - jax >=0.3
+    - optax
+    - numpyro
 
 test:
   imports:
