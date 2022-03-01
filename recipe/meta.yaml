@@ -40,6 +40,8 @@ requirements:
     - jax >=0.3
     - optax
     - numpyro
+    - flax
+    - torchmetrics >=0.6.0
 
 test:
   imports:
