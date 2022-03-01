@@ -1,18 +1,18 @@
 {% set name = "scvi-tools" %}
-{% set version = "0.14.6" %}
+{% set version = "0.15.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f30a8a685624e49fa8a0d9b9d53152eb7b95e28b020ebd1c564387b2250bc38a
+  sha256: fd40ab76739b3054b1535704246aa399273f6f2b79b51d091f2aa0df2e872539
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
@@ -27,7 +27,6 @@ requirements:
     - h5py >=2.9.0
     - importlib_metadata
     - ipywidgets >=7.5.1
-    - numba >=0.41.0
     - numpy >=1.17.0
     - openpyxl >=3.0
     - pandas >=1.0
@@ -38,6 +37,12 @@ requirements:
     - pytorch >=1.8.0
     - tqdm >=4.56.0
     - setuptools <=59.5.0
+    - jax >=0.3
+    - jaxlib <=0.1.75
+    - optax
+    - numpyro >=0.9.0
+    - flax >=0.4.0
+    - torchmetrics >=0.6.0
 
 test:
   imports:
@@ -58,7 +63,7 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: Deep probabilistic analysis of single-cell omics data.
-  doc_url: https://docs.scvi-tools.org/en/stable/ 
+  doc_url: https://docs.scvi-tools.org/en/stable/
   dev_url: https://github.com/YosefLab/scvi-tools
 
 extra:
