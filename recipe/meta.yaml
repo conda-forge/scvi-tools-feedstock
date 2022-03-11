@@ -1,5 +1,5 @@
 {% set name = "scvi-tools" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fd40ab76739b3054b1535704246aa399273f6f2b79b51d091f2aa0df2e872539
+  sha256: 29d49b3134174f1e701c4ac2a8b9a3f9c3cccab4c6170eda0972534363c47cc2
 
 build:
   noarch: python
-  number: 3
+  number: 0
   script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
