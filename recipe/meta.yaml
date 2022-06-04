@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
@@ -42,6 +42,7 @@ requirements:
     - numpyro >=0.9.0
     - flax >=0.4.0
     - torchmetrics >=0.6.0
+    - protobuf <=3.20.1
 
 test:
   imports:
