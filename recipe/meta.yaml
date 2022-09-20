@@ -1,5 +1,5 @@
 {% set name = "scvi-tools" %}
-{% set version = "0.17.3" %}
+{% set version = "0.17.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 089f99ffe841ba008fc973ba706f1ba3e057e53c8e05e02ecd9f25aed7434aeb
+  sha256: b0a5139e386142ed4fdcab3beda728bdbde3d2fe0210eb2dbd5959b50486fc84
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ requirements:
     - openpyxl >=3.0
     - pandas >=1.0
     - pyro-ppl >=1.6.0
-    - pytorch-lightning >=1.6.4,<1.7
+    - pytorch-lightning >=1.7.0,<1.8
     - rich >=9.12.4
     - scikit-learn >=0.21.2
     - pytorch >=1.8.0
@@ -71,5 +71,5 @@ extra:
     - romain-lopez
     - adamgayoso
     - galenxing
-    - jjhong922
+    - justjhong
     - watiss
