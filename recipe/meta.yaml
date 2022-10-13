@@ -1,5 +1,5 @@
 {% set name = "scvi-tools" %}
-{% set version = "0.17.4" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b0a5139e386142ed4fdcab3beda728bdbde3d2fe0210eb2dbd5959b50486fc84
+  sha256: 3024b8bccb33f80b8052e3c5b957c323e32170b1c698faaba08a7139bd42f288
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
     - python >=3.7
     - poetry >=1.0.9
     - poetry-core
-    - pip >=19.0
+    - pip >=22.0
   run:
     - python >=3.7
     - anndata >=0.7.5
@@ -31,7 +31,7 @@ requirements:
     - openpyxl >=3.0
     - pandas >=1.0
     - pyro-ppl >=1.6.0
-    - pytorch-lightning >=1.7.0,<1.8
+    - pytorch-lightning >=1.6.0,<1.8
     - rich >=9.12.4
     - scikit-learn >=0.21.2
     - pytorch >=1.8.0
@@ -43,6 +43,7 @@ requirements:
     - flax >=0.4.0
     - torchmetrics >=0.6.0
     - mudata >=0.1.2
+    - ml-collections >=0.1.1
 
 test:
   imports:
