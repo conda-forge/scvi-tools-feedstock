@@ -149,7 +149,8 @@ Feedstock Maintainers
 
 * [@adamgayoso](https://github.com/adamgayoso/)
 * [@galenxing](https://github.com/galenxing/)
-* [@jjhong922](https://github.com/jjhong922/)
+* [@justjhong](https://github.com/justjhong/)
+* [@martinkim0](https://github.com/martinkim0/)
 * [@romain-lopez](https://github.com/romain-lopez/)
 * [@watiss](https://github.com/watiss/)
 
