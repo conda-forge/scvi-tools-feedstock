@@ -43,6 +43,7 @@ requirements:
     - flax >=0.4.0
     - torchmetrics >=0.6.0
     - mudata >=0.1.2
+    - ml-collections >=0.1.1
 
 test:
   imports:
