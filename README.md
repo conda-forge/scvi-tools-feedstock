@@ -1,11 +1,11 @@
-About scvi-tools
-================
+About scvi-tools-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scvi-tools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://scvi-tools.org/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scvi-tools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Deep probabilistic analysis of single-cell omics data.
 
