@@ -1,5 +1,5 @@
 {% set name = "scvi-tools" %}
-{% set version = "0.20.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: db0088290d04485486890ae9112a0ea8977d8503ea4cd6a4b5badb7928c4e1c1
+  sha256: e4b61ac7cc679fc48f487e8ade030ccd9c7a0fa4f603d5f3ca8327d57d3a764c
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - hatch
     - pip >=22.0
   run:
-    - python >=3.8
+    - python >=3.9
     - anndata >=0.7.5
     - docrep >=0.3.2
     - h5py >=2.9.0
@@ -28,7 +28,7 @@ requirements:
     - openpyxl >=3.0
     - pandas >=1.0
     - pyro-ppl >=1.6.0
-    - pytorch-lightning >=1.9.0,<1.10.0
+    - lightning >=2.0,<2.1
     - rich >=12.0.0
     - scikit-learn >=0.21.2
     - pytorch >=1.8.0
@@ -36,11 +36,13 @@ requirements:
     - jax >=0.4.4
     - jaxlib >=0.4.3
     - optax
-    - numpyro >=0.9.0
+    - numpyro >=0.12.1
     - flax >=0.4.0
     - torchmetrics >=0.11.0
     - mudata >=0.1.2
     - ml-collections >=0.1.1
+    - sparse >=0.14.0
+    - xarray >=2023.2.0
 
 test:
   imports:
