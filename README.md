@@ -148,9 +148,11 @@ Feedstock Maintainers
 =====================
 
 * [@adamgayoso](https://github.com/adamgayoso/)
+* [@canergen](https://github.com/canergen/)
 * [@galenxing](https://github.com/galenxing/)
 * [@justjhong](https://github.com/justjhong/)
 * [@martinkim0](https://github.com/martinkim0/)
+* [@ori-kron-wis](https://github.com/ori-kron-wis/)
 * [@romain-lopez](https://github.com/romain-lopez/)
 * [@watiss](https://github.com/watiss/)
 
