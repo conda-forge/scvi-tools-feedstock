@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - hatch
     - pip >=22.0
   run:
-    - python >=3.9
-    - anndata >=0.7.5,<=0.10.8
+    - python >=3.10
+    - anndata >=0.7.5
     - docrep >=0.3.2
     - h5py >=2.9.0
-    - numpy >=1.17.0
+    - numpy >=1.17.0,<2.0
     - openpyxl >=3.0
     - pandas >=1.0
     - pyro-ppl >=1.6.0
@@ -43,6 +43,8 @@ requirements:
     - ml-collections >=0.1.1
     - sparse >=0.14.0
     - xarray >=2023.2.0
+    - tensorboard>=2.0
+    - scipy
 
 test:
   imports:
