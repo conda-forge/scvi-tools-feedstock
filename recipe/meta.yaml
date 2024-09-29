@@ -1,5 +1,5 @@
 {% set name = "scvi-tools" %}
-{% set version = "1.1.6.post2" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,24 +7,24 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b8643bf67053d25e1969a8dd9a496d0f70b3d0b47789763ae473861000443a05
+  sha256: d4ad56a972ec5a731548e2e49360101c5a1b285ece53c3f3faecd6bda1c9a317
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - hatch
     - pip >=22.0
   run:
-    - python >=3.9
-    - anndata >=0.7.5,<=0.10.8
+    - python >=3.10
+    - anndata >=0.7.5
     - docrep >=0.3.2
     - h5py >=2.9.0
-    - numpy >=1.17.0
+    - numpy >=1.17.0,<2.0
     - openpyxl >=3.0
     - pandas >=1.0
     - pyro-ppl >=1.6.0
@@ -43,6 +43,8 @@ requirements:
     - ml-collections >=0.1.1
     - sparse >=0.14.0
     - xarray >=2023.2.0
+    - tensorboard >=2.0
+    - scipy
 
 test:
   imports:
