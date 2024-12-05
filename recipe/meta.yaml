@@ -73,6 +73,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jdblischak
     - ori-kron-wis
     - canergen
     - martinkim0
