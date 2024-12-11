@@ -150,6 +150,7 @@ Feedstock Maintainers
 * [@adamgayoso](https://github.com/adamgayoso/)
 * [@canergen](https://github.com/canergen/)
 * [@galenxing](https://github.com/galenxing/)
+* [@jdblischak](https://github.com/jdblischak/)
 * [@justjhong](https://github.com/justjhong/)
 * [@martinkim0](https://github.com/martinkim0/)
 * [@ori-kron-wis](https://github.com/ori-kron-wis/)
