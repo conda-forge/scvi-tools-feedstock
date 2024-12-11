@@ -1,5 +1,6 @@
 {% set name = "scvi-tools" %}
 {% set version = "1.2.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - hatch
     - pip >=22.0
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - anndata >=0.7.5
     - docrep >=0.3.2
     - h5py >=2.9.0
@@ -60,6 +61,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
   commands:
     - pip check
 
