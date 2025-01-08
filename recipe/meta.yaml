@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -23,10 +23,10 @@ requirements:
     - pip >=22.0
   run:
     - python >={{ python_min }}
-    - anndata >=0.7.5
+    - anndata >=0.11
     - docrep >=0.3.2
     - h5py >=2.9.0
-    - numpy >=1.17.0,<2.0
+    - numpy >=1.17.0
     - openpyxl >=3.0
     - pandas >=1.0
     - pyro-ppl >=1.6.0
@@ -47,6 +47,7 @@ requirements:
     - xarray >=2023.2.0
     - tensorboard >=2.0
     - scipy
+    - numba >=0.60.0
 
 test:
   imports:
