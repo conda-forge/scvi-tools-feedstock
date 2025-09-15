@@ -31,7 +31,7 @@ requirements:
     - lightning >=2.0
     - rich
     - scikit-learn
-    - torch
+    - pytorch
     - tqdm
     - torchmetrics
     - mudata
