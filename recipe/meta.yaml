@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "scvi-tools" %}
 {% set version = "1.4.0" %}
 
@@ -25,27 +25,21 @@ requirements:
     - python >={{ python_min }}
     - anndata >=0.11
     - docrep >=0.3.2
-    - h5py >=2.9.0
-    - numpy >=1.17.0
-    - openpyxl >=3.0
-    - pandas >=1.0
-    - pyro-ppl >=1.6.0
+    - numpy
+    - pandas
+    - pyro-ppl
     - lightning >=2.0
-    - rich >=12.0.0
-    - scikit-learn >=0.21.2
-    - pytorch >=1.8.0
-    - tqdm >=4.56.0
-    - jax >=0.4.4,<0.7.0
-    - jaxlib >=0.4.3,<0.7.0
-    - optax
-    - numpyro >=0.12.1
-    - flax >=0.4.0
-    - torchmetrics >=0.11.0
-    - mudata >=0.1.2
-    - ml-collections >=0.1.1
+    - rich
+    - scikit-learn
+    - torch
+    - tqdm
+    - torchmetrics
+    - mudata
+    - scanpy >=1.10
+    - ml-collections
     - sparse >=0.14.0
-    - xarray >=2023.2.0
-    - tensorboard >=2.0
+    - xarray
+    - tensorboard
     - scipy
     - numba >=0.60.0
 
