@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "scvi-tools" %}
-{% set version = "1.4.3" %}
+{% set version = "1.5.0.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 79bdbae257f3c40cb5a50a4709ac7f6e498fe9a92da8f54487f14dd94234c445
+  sha256: 6f945e5b578a9229612d4b332a9b65dc08cb558343331d268956ddbf1f4ef9fa
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - pip >=22.0
   run:
     - python >={{ python_min }}
-    - anndata >=0.11
+    - anndata
     - docrep >=0.3.2
     - numpy
     - pandas
