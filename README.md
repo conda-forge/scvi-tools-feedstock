@@ -44,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `scvi-tools` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install scvi-tools
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install scvi-tools
 ```
 
-It is possible to list all of the versions of `scvi-tools` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add scvi-tools
+# for installing globally
+pixi global install scvi-tools
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `scvi-tools` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search scvi-tools --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search scvi-tools --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search scvi-tools --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -80,6 +122,8 @@ mamba repoquery whoneeds scvi-tools --channel conda-forge
 # List dependencies of `scvi-tools`:
 mamba repoquery depends scvi-tools --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
