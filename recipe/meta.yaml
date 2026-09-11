@@ -1,14 +1,14 @@
 {% set python_min = "3.12" %}
 {% set name = "scvi-tools" %}
-{% set version = "1.5.0.post1" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6f945e5b578a9229612d4b332a9b65dc08cb558343331d268956ddbf1f4ef9fa
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 413cab3a8b8865bb42712c1239ab3b1e78960e0739df844128d3577c1556fb18
 
 build:
   noarch: python
@@ -22,13 +22,14 @@ requirements:
     - hatch
     - pip >=22.0
   run:
+    - joblib
     - python >={{ python_min }}
     - anndata
     - docrep >=0.3.2
     - numpy
     - pandas
     - pyro-ppl
-    - lightning >=2.0
+    - lightning >=2
     - rich
     - scikit-learn
     - pytorch
@@ -37,11 +38,11 @@ requirements:
     - mudata
     - scanpy >=1.10
     - ml-collections
-    - sparse >=0.14.0
+    - sparse >=0.14
     - xarray
     - tensorboard
     - scipy
-    - numba >=0.60.0
+    - numba >=0.60
 
 test:
   imports:
