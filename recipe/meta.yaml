@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "scvi-tools" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 413cab3a8b8865bb42712c1239ab3b1e78960e0739df844128d3577c1556fb18
+  sha256: d045fd86320f7597858563be3702da76ddb74f724eb16125114cf73ceb3802c1
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ requirements:
     - tqdm
     - torchmetrics
     - mudata
-    - scanpy >=1.10
+    - scanpy >=1.11
     - ml-collections
     - sparse >=0.14
     - xarray
